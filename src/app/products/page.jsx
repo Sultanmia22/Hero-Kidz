@@ -2,7 +2,13 @@ import { getProducts } from '@/action/server/product'
 import ProductCard from '@/Components/Card/ProductCard'
 import React from 'react'
 
+export const metadata = {
+  title: 'All Product',
+  description: "Browse all available products from our store.",
+}
+
 const ProductPage = async () => {
+
 
     const products = await getProducts() || [];
 

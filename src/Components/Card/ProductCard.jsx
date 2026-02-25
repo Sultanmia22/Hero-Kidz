@@ -9,14 +9,14 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="group flex flex-col w-full  rounded-3xl border border-[var(--color-base-300)] bg-[var(--color-base-100)] p-3 shadow-sm transition-all duration-300 hover:shadow-2xl hover:border-[var(--color-primary)]">
-      
+        
       {/* ইমেজ সেকশন */}
-      <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-[var(--color-base-200)]">
+      <div className="relative aspect-square overflow-hidden rounded-2xl bg-[var(--color-base-200)]">
         <Image
           src={product.image}
           alt={product.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover w-60 h-60 transition-transform duration-500 group-hover:scale-105"
         />
         
         {/* ডিসকাউন্ট ব্যাজ */}
@@ -69,7 +69,7 @@ const ProductCard = ({ product }) => {
         </button>
 
         <Link href={`/products/${product._id}`} className="group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-secondary text-secondary py-3.5 font-bold  hover:text-white transition-all hover:bg-[var(--color-secondary)] active:scale-95 shadow-md shadow-[var(--color-primary)]/20">
-          <HiShoppingCart className="text-xl transition-transform group-hover/btn:-translate-y-1" />
+          
           View Details
         </Link>
        </div>
