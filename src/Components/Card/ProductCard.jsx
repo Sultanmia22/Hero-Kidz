@@ -63,12 +63,12 @@ const ProductCard = ({ product }) => {
 
         {/* অ্যাড টু কার্ট বাটন */}
        <div className='flex flex-col gap-3'>
-         <button className="group/btn flex w-full items-center justify-center gap-2 rounded-2xl bg-secondary py-3.5 font-bold text-white transition-all hover:bg-[var(--color-secondary)] active:scale-95 shadow-md shadow-[var(--color-primary)]/20">
+         <button className="group/btn flex w-full items-center justify-center gap-2 rounded-2xl bg-secondary py-3 font-bold text-white transition-all hover:bg-[var(--color-secondary)] active:scale-95 shadow-md shadow-primary/20">
           <HiShoppingCart className="text-xl transition-transform group-hover/btn:-translate-y-1" />
           Add to Cart
         </button>
 
-        <Link href={`/products/${product._id}`} className="group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-secondary text-secondary py-3.5 font-bold  hover:text-white transition-all hover:bg-[var(--color-secondary)] active:scale-95 shadow-md shadow-[var(--color-primary)]/20">
+        <Link href={`/products/${product._id}`} className="group/btn flex w-full items-center justify-center gap-2 rounded-2xl border border-secondary text-secondary py-3 font-bold  hover:text-white transition-all hover:bg-secondary active:scale-95 shadow-md shadow-primary/20">
           
           View Details
         </Link>
